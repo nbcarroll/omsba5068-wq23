@@ -36,12 +36,14 @@ class SenseDirtAgent(VacuumAgent):
     def prep(self, report):
         pass
         
+# NOTICE HOW PERCEPT IS NOW USED IN CHOOSE ACTION 
     def execute(self, percept):
         self.pre_update(percept) 
         action = self.choose_action(percept)
         self.post_update(action)
         return action
-   
+ 
+# ACTION_SUCK IS SEPARATE AND BASED ON PERCEIVING DIRT
     def choose_action(self, percept):
         action = None
         if self.battery_depleted():

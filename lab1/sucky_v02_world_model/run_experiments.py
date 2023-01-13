@@ -11,12 +11,15 @@ def log_null(msg):
 
 ########################################
     
-dirt_density = 0.1
+dirt_density = 0.3
 wall_density = 0.3
 num_samples = 100
 output_file_name = 'simulation_results.csv'
-agents = [ ("agents/reactiveagent.py",  "NoSenseAgent"),
+agents = [("agents/lab1agents.py",   "BestWorldModelAgent"),
+           ("agents/lab1agents.py", "BestReactiveAgent"),
+           #("agents/reactiveagent.py",  "NoSenseAgent"),
            ("agents/reactiveagent.py",   "SenseDirtAgent"),
+           ("agents/worldmodelagent.py", "WorldModelAgent")
          ]
 write_results_to_console = True
 

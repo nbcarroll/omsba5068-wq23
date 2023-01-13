@@ -20,6 +20,8 @@ BATTERY_CONSUMPTION = { ACTION_SUCK: 4,
                         ACTION_STOP: 0
                     }
 
+# This is the Superclass
+
 class VacuumAgent(Agent):
     def __init__(self, version, log, program, battery=DEFAULT_BATTERY_CAPACITY):
         # Agent superclass holds function call to have agent choose next action

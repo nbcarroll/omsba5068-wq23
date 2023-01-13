@@ -5,7 +5,9 @@
 
 AGENTS = [ ("agents/reactiveagent.py",  "NoSenseAgent"),
            ("agents/reactiveagent.py",  "SenseDirtAgent"),
-           ("agents/worldmodelagent.py", "WorldModelAgent")
+           ("agents/worldmodelagent.py", "WorldModelAgent"),
+           ("agents/lab1agents.py", "BestWorldModelAgent"),
+           ("agents/lab1agents.py", "BestReactiveAgent"),
          ]
 
 ####  DO NOT EDIT BELOW THIS LINE #########
